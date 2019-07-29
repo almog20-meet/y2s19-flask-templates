@@ -1,1 +1,27 @@
 <!-- Put the HTML template for your page here! -->
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	 <link
+		rel="stylesheet" 
+		type="text/css"
+		href="{{ url_for('static', filename='style.css') }}">
+
+
+	<title>Almog</title>
+</head>
+
+<body>
+	<h1> Hamburger</h1>
+
+	<br>
+
+	<p> Hamburger is the best food!</p>
+
+	{%  for i in foods %}
+		{{i}}
+		 {%endfor%}
+
+</body>
+</html>
